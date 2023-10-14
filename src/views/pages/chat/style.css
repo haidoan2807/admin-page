@@ -1,0 +1,221 @@
+.msg-container {
+    overflow: hidden;
+    /* display: flex;  */
+}
+
+.msg-container.outgoing {
+    position: relative;
+}
+
+.deleteMsg-icon-container {
+    position: absolute;
+    top: 47%;
+}
+
+.msg-container.outgoing > * {
+    /* float: left;  */
+    float: right;
+}
+
+.deleteMsg-icon-container {
+    /* padding-top: 2.5%;*/
+    margin-left: 30%;
+    display: none;
+    cursor: pointer;
+}
+
+.msg-container:hover > .deleteMsg-icon-container {
+    display: block;
+    transition: all 0.2s ease 1s;
+}
+
+.msg-model {
+    max-width: 60%;
+}
+
+.cs-message__content {
+    border-radius: 7px !important;
+}
+
+/* --------Attach images--------------  */
+.icon-container {
+    font-size: "1.2em";
+    padding-left: "0.2em";
+    padding-right: "0.2em";
+}
+
+.img-wrap {
+    position: relative;
+    max-width: 50px;
+    float: right;
+    margin-right: 10px;
+}
+.img-wrap .close {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    z-index: 100;
+    background: white;
+    border-radius: 8px;
+    display: block;
+    cursor: pointer;
+}
+
+.message-input-images {
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.break-div {
+    height: 5px;
+    border-bottom: 1px dashed #d1dbe4;
+}
+
+.message-input-images.hide {
+    display: none;
+}
+
+.message-input-images.show {
+    display: inline-block;
+}
+
+.conversation.current {
+    background-color: azure;
+}
+
+.attached-container {
+    width: 50px;
+    height: 50px;
+    border-width: 0.75px;
+    border-style: double;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+.attached-container > div {
+    width: 100%;
+}
+
+.file-name {
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+.attached-file svg {
+    height: 18px;
+}
+
+.cs-message-input__content-editor-wrapper,.cs-search{
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.cs-message-input__content-editor-container,.cs-message-input__content-editor,.cs-search__input{
+    background-color: #f0f0f0 !important;
+}
+
+.cs-message--incoming .cs-message__content{
+    background-color: #edf0f3;
+}
+
+.cs-message--outgoing .cs-message__content{
+    background-color: #b9e2d4;
+}
+
+.messageInput{
+    flex-grow: 1;
+    border-top:0 !important;
+    flex-shrink:initial;
+}
+
+.attached-file-msg{
+    /* width: 100%; */
+    width: 85%;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.incoming .attached-file-msg img,.incoming .attached-file-msg > div{
+    float: left;
+}
+
+.outgoing .attached-file-msg img,.outgoing .attached-file-msg > div{
+    float: right;
+}
+
+.incoming .attached-file-msg{
+    padding-left: 50px;
+}
+
+.outgoing .attached-file-msg{
+    padding-right: 50px;
+}
+
+.attached-file-msg img,.attached-file-msg > div{
+    width: 130px;
+    height: 50px;
+}
+
+.attached-file-msg > div{
+    padding-left: 10px;
+    background: #f0efee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.attached-file-msg .filename{
+    font-size: small;
+    padding-left: 5px;
+}
+
+.null-content-msg .cs-message__content-wrapper{
+    display: none;
+}
+
+.null-content-msg + .attached-file-msg {
+    padding-right: 0px;
+}
+/* --------Chat height------ */
+div.body{
+    display: inline-flex;
+}
+/* 
+@media only screen and (min-height: 500px) {
+    .container-fluid > div {
+        max-height: 300px;
+    }
+}
+
+@media only screen and (min-height: 600px) {
+    .container-fluid > div {
+        max-height: 480px;
+    }
+}
+
+@media only screen and (min-height: 768px) {
+    .container-fluid > div {
+        max-height: 550px;
+    }
+}
+
+@media only screen and (min-height: 900px) {
+    .container-fluid > div {
+        max-height: 600px;
+    }
+}
+
+@media only screen and (min-height: 1300px) {
+    .container-fluid > div {
+        max-height: 340px;
+    }
+}
+
+@media only screen and (min-height: 1500px) {
+    .container-fluid > div {
+        max-height: 470px;
+    }
+} */

@@ -1,0 +1,34 @@
+// Here you can add other styles
+$header-color: #FFFCFC;
+$header-bg: #03365C;
+$header-hover-color: #FFFCFC;
+$header-active-color: $header-hover-color;
+
+.required:after {
+    content: " *";
+    color: red;
+    position: absolute;
+    margin-left: 2.5px;
+  }
+
+.disable-select > div, input:disabled, .form-control:disabled {
+    background-color: #f5f7f9 !important;
+ }
+
+ .disable-select > div {
+  background-color: #f5f7f9 !important;
+  border-color: var(--cui-input-disabled-border-color, #b1b7c1);
+}
+
+.align-center-col-name{
+  display: flex;
+  justify-content: center;
+}
+
+// $breadcrumb-bg: #fff;
+$sidebar-brand-bg: $header-bg;
+$sidebar-bg: $header-bg;
+$sidebar-nav-link-color: #F5F5F5;
+
+
+@import "@coreui/coreui/scss/coreui";

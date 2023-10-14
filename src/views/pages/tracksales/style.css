@@ -1,0 +1,20 @@
+.import-track-sale{
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+.center-label{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.add-new-track-sale{
+    margin-top: 0;
+    padding-bottom: 3px;
+    margin-right: 11px;
+}
+
+.btn-group{
+    /* max-height: 37px; */
+}
