@@ -52,7 +52,7 @@ const Login = () => {
 
   useEffect(() => {
     if (user) {
-      history.push('/dashboard')
+      history.push('/agency-subscription')
     }
   }, [])
 
@@ -60,7 +60,7 @@ const Login = () => {
     e.preventDefault()
     setLoading(true)
     const resp = await signIn(form.email, form.password, form.keep)
-    history.push('/dashboard')
+    history.push('/agency-subscription')
 
     if (resp.email === '' || resp.password === '') {
       setMessage({

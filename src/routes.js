@@ -1,7 +1,6 @@
 import React from 'react'
 import CampaignCost from './views/pages/campaign/campaign-cost'
 
-const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
@@ -73,8 +72,8 @@ const DetailUser = React.lazy(() => import('./views/pages/user-management/userli
 const DetailCampaign = React.lazy(() => import('./views/pages/campaign/detail-campaign/index'))
 
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/', exact: true, name: 'Agency Subscription', component: AgencySubscription },
+  { path: '/agency-subscription', name: 'Agency Subscription', component: AgencySubscription },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
@@ -120,7 +119,6 @@ const routes = [
   { path: '/user-management', name: 'User Management', component: UserManagement },
   { path: '/accesscontrol', name: 'Access Control', component: AccessControlManagement },
   { path: '/package-management', name: 'Package Management', component: PackageManagement },
-  { path: '/agency-subscription', name: 'Agency Subscription', component: AgencySubscription },
   {
     path: '/subscription',
     name: 'Subscription Management',
